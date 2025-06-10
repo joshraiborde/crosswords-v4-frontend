@@ -19,7 +19,7 @@ const CrosswordPuzzle4 = () => {
 
   const fetchClues = async () => {
     try {
-      const response = await fetch("http://localhost:10000/api/generate-clues");
+      const response = await fetch("https://crosswords-v4-backend.onrender.com/api/generate-clues");
       const data = await response.json();
       setClues(data);
     } catch (error) {
